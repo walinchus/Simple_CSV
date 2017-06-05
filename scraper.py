@@ -1,5 +1,5 @@
 import scraperwiki
- import csv
+import csv
 data = scraperwiki.scrape('https://www.sos.state.co.us/pubs/charities/reports/2016/tables/Table2-PaidSolicitorSummary2016.csv')
  
 reader = csv.DictReader(data.splitlines())
