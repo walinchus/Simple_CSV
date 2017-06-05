@@ -6,5 +6,6 @@ reader = csv.DictReader(data.splitlines())
 for row in reader:
      for key, value in row.iteritems():
          print key
+         print value
 print row['Ref. No.']
 scraperwiki.sqlite.save(['Ref. No.'], row)
