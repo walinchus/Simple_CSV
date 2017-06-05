@@ -4,7 +4,7 @@ data = scraperwiki.scrape('https://www.sos.state.co.us/pubs/charities/reports/20
 reader = csv.DictReader(data.splitlines())
  
 for row in reader:
-scraperwiki.sqlite.save(['Ref. No.'], row)
+ scraperwiki.sqlite.save(['Ref. No.'], row)
  
 for row in reader:
      for key, value in row.iteritems():
